@@ -1,0 +1,930 @@
+<?xml version="1.0" ?>
+<robot name="braco_pra_montar_modificado_v" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find braco_pra_montar_modificado_v_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find braco_pra_montar_modificado_v_description)/urdf/braco_pra_montar_modificado_v.trans" />
+<xacro:include filename="$(find braco_pra_montar_modificado_v_description)/urdf/braco_pra_montar_modificado_v.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0014576298423471456 -0.0001681902971218907 0.012384748259166028"/>
+    <mass value="0.1632705221709405"/>
+    <inertia ixx="0.000307" ixy="-2e-06" ixz="-3e-06" iyy="0.000304" iyz="1e-06" izz="0.000547"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_left_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.10508078897675058 0.07412559010208807 0.01866492782702041"/>
+    <mass value="0.25257832542625036"/>
+    <inertia ixx="4.7e-05" ixy="8e-06" ixz="-0.0" iyy="6.5e-05" iyz="0.0" izz="4.1e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.062989 0.056545 -0.068459"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/servo_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.062989 0.056545 -0.068459"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/servo_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Lower_arm_left_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.019322001134778045 0.06513396794403617 0.06781493814393534"/>
+    <mass value="0.2493370307523243"/>
+    <inertia ixx="0.000982" ixy="-0.000152" ixz="-0.000135" iyy="0.000573" iyz="-0.000415" izz="0.000524"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.018386 -0.008953 -0.0971"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Lower_arm_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.018386 -0.008953 -0.0971"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Lower_arm_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_right_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.15249648740537347 0.05614503745987372 0.045823927827020036"/>
+    <mass value="0.25257832542625036"/>
+    <inertia ixx="4.7e-05" ixy="8e-06" ixz="0.0" iyy="6.5e-05" iyz="-0.0" izz="4.1e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.1032 0.071827 -0.0413"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/servo_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.1032 0.071827 -0.0413"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/servo_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Lower_arm_right_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.025660100220492667 0.058681993128532776 0.06391918185287858"/>
+    <mass value="0.23214202166987136"/>
+    <inertia ixx="0.000862" ixy="-0.000157" ixz="-0.000144" iyy="0.000532" iyz="-0.000355" izz="0.00047"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.025591 0.007054 -0.0971"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Lower_arm_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.025591 0.007054 -0.0971"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Lower_arm_right_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Lower_arm_bushing_v1_down_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.02198925878641744 -0.008003589633789783 -9.062484027100304e-08"/>
+    <mass value="0.0034189183158817786"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="1e-06" iyz="-0.0" izz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.002667 -0.052143 -0.143062"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Lower_arm_bushing_v1_down_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.002667 -0.052143 -0.143062"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Lower_arm_bushing_v1_down_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Lower_arm_bushing_v1_up_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.02198927926794409 0.008002876707587175 -2.1765958077568648e-07"/>
+    <mass value="0.0034189183158817786"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="1e-06" iyz="-0.0" izz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.054613 -0.072682 -0.181953"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Lower_arm_bushing_v1_up_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.054613 -0.072682 -0.181953"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Lower_arm_bushing_v1_up_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_elbow_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.07401372871264411 0.3785546860651473 0.20479336268357487"/>
+    <mass value="0.2525786066068201"/>
+    <inertia ixx="4.6e-05" ixy="4e-06" ixz="-4e-06" iyy="5.3e-05" iyz="-1.3e-05" izz="5.4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.007024 0.27396 -0.016189"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/servo_elbow_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.007024 0.27396 -0.016189"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/servo_elbow_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Center_arm_v1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0003847229539455585 0.02996464123378388 -0.050412339883927654"/>
+    <mass value="0.24743903954578314"/>
+    <inertia ixx="0.000587" ixy="-5.1e-05" ixz="7.2e-05" iyy="0.000466" iyz="0.000197" izz="0.000194"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.059745 -0.119851 -0.228037"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Center_arm_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.059745 -0.119851 -0.228037"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Center_arm_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="centralizador_square_elbow_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.006992189607770483 -0.00979031893523441 0.003105502537607524"/>
+    <mass value="0.0033035453927957375"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.044916 -0.137584 -0.224931"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/centralizador_square_elbow_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.044916 -0.137584 -0.224931"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/centralizador_square_elbow_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="centralizador_square_punho_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.004089506187384864 -0.0018163774640553298 -0.011591482407016074"/>
+    <mass value="0.0033035453927957375"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.062107 -0.184817 -0.13787"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/centralizador_square_punho_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.062107 -0.184817 -0.13787"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/centralizador_square_punho_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="suporte_elbow_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.004208920031412572 -0.0015317413939227864 -2.7688239453982355e-07"/>
+    <mass value="0.004555197598329582"/>
+    <inertia ixx="1e-06" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.026355 -0.131878 -0.227915"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/suporte_elbow_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.026355 -0.131878 -0.227915"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/suporte_elbow_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="centralizador_elbow_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.0015572812166802473 0.0005667913532539093 -4.974623153686242e-07"/>
+    <mass value="0.00026744770959091237"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.028359 -0.131275 -0.228037"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/centralizador_elbow_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.028359 -0.131275 -0.228037"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/centralizador_elbow_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="centralizador_punho_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.0015575977963430757 0.0005667328243037228 -4.824069513575946e-07"/>
+    <mass value="0.00026744770959091237"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.048453 -0.186482 -0.126279"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/centralizador_punho_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.048453 -0.186482 -0.126279"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/centralizador_punho_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="suporte_punho_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.004208722099493856 -0.0015318674634423046 3.393225177505954e-07"/>
+    <mass value="0.004555197598329582"/>
+    <inertia ixx="1e-06" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.046605 -0.187514 -0.12631"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/suporte_punho_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.046605 -0.187514 -0.12631"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/suporte_punho_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_punho_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.027104102134800787 0.0007110375028254456 0.0008690147893237465"/>
+    <mass value="0.25257832542625036"/>
+    <inertia ixx="4.3e-05" ixy="-1e-06" ixz="-1e-06" iyy="4.2e-05" iyz="-2e-06" izz="6.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.079839 -0.175058 -0.126279"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/servo_punho_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.079839 -0.175058 -0.126279"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/servo_punho_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Upper_arm_servo_mount_v1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.01770688925654587 0.00514920016432957 0.009058847703583367"/>
+    <mass value="0.022931110023722043"/>
+    <inertia ixx="1.5e-05" ixy="1e-06" ixz="0.0" iyy="1.8e-05" iyz="1e-06" izz="4e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.110586 -0.241086 -0.132629"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Upper_arm_servo_mount_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.110586 -0.241086 -0.132629"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Upper_arm_servo_mount_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Upper_arm_left_v1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.023688359821440026 -0.03580499611956864 -0.0036523555927724383"/>
+    <mass value="0.10653920393472553"/>
+    <inertia ixx="0.000106" ixy="-2.8e-05" ixz="-2e-06" iyy="4.1e-05" iyz="-5e-06" izz="9.3e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.076005 -0.253672 -0.132629"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Upper_arm_left_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.076005 -0.253672 -0.132629"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Upper_arm_left_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Upper_arm_right_v1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.1333779502822482 -0.007601674956683707 -0.16197962948811415"/>
+    <mass value="0.08933659187432984"/>
+    <inertia ixx="9.8e-05" ixy="-2.4e-05" ixz="-2e-06" iyy="3.8e-05" iyz="-4e-06" izz="8.3e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.240124 -0.208951 -0.291227"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Upper_arm_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.240124 -0.208951 -0.291227"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Upper_arm_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_punho_rotation_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.028180144865253873 0.18975222348689527 -0.2185956207310645"/>
+    <mass value="0.25257832542625036"/>
+    <inertia ixx="6.5e-05" ixy="-8e-06" ixz="0.0" iyy="4.7e-05" iyz="1e-06" izz="4.1e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.1173 -0.046148 -0.359851"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/servo_punho_rotation_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.1173 -0.046148 -0.359851"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/servo_punho_rotation_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="tampa_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="1.7709737326341343e-05 0.000205089201576887 0.002000998655142701"/>
+    <mass value="0.06002230916877163"/>
+    <inertia ixx="6.8e-05" ixy="-0.0" ixz="-0.0" iyy="6.8e-05" iyz="-0.0" izz="0.000136"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.002742 0.002742 -0.04993"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/tampa_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.002742 0.002742 -0.04993"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/tampa_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Base_servo_mount_left_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.005623067087596613 -0.0148467393953202 0.04245293340657174"/>
+    <mass value="0.04710420541299449"/>
+    <inertia ixx="3.7e-05" ixy="-6e-06" ixz="-0.0" iyy="2.3e-05" iyz="0.0" izz="2e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.025935 -0.028591 -0.05393"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Base_servo_mount_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.025935 -0.028591 -0.05393"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Base_servo_mount_left_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Base_servo_mount_right_v1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.005236234483781778 -0.014987633042717052 0.04245293340657338"/>
+    <mass value="0.04710420541299451"/>
+    <inertia ixx="3.7e-05" ixy="-6e-06" ixz="0.0" iyy="2.3e-05" iyz="-0.0" izz="2e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.043999 -0.003142 -0.05393"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Base_servo_mount_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.043999 -0.003142 -0.05393"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Base_servo_mount_right_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="MG995_v1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.013934725797355423 -0.02110840333722338 -0.008916675982346484"/>
+    <mass value="0.25257832542625036"/>
+    <inertia ixx="6.5e-05" ixy="-9e-06" ixz="0.0" iyy="4.4e-05" iyz="0.0" izz="4.4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.020089 -0.027741 -0.03362"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/MG995_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.020089 -0.027741 -0.03362"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/MG995_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Servo_mount_v1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0008498565489405557 0.041276452468245683 -0.0012269307473176533"/>
+    <mass value="0.024798829505866666"/>
+    <inertia ixx="1.8e-05" ixy="-5e-06" ixz="0.0" iyy="6e-06" iyz="-2e-06" izz="2.3e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.107088 -0.261587 -0.118982"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Servo_mount_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.107088 -0.261587 -0.118982"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Servo_mount_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Cover_plate_v1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.013498371636630216 0.027376355848631517 0.015095042497509564"/>
+    <mass value="0.022775438226382963"/>
+    <inertia ixx="1.5e-05" ixy="-5e-06" ixz="-1e-06" iyy="6e-06" iyz="-3e-06" izz="1.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.098012 -0.260332 -0.133516"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Cover_plate_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.098012 -0.260332 -0.133516"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Cover_plate_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Bearing_guide_v1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.003699175912135838 -0.0028919056166948343 0.01659884179759201"/>
+    <mass value="0.0016815613439380714"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.119782 -0.333199 -0.123432"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Bearing_guide_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.119782 -0.333199 -0.123432"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Bearing_guide_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Bearing_top-bottom_bushing_v1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0003747969406717455 -0.0002937877427994784 0.0016842148351174369"/>
+    <mass value="0.0016106179771745465"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.120855 -0.332361 -0.128243"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Bearing_top-bottom_bushing_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.120855 -0.332361 -0.128243"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Bearing_top-bottom_bushing_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Bearing_top-bottom_bushing_v1__1__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.0003754451166737838 0.00029297650866505487 -0.0016835312400036162"/>
+    <mass value="0.0016106179771745465"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.126108 -0.328254 -0.151818"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Bearing_top-bottom_bushing_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.126108 -0.328254 -0.151818"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Bearing_top-bottom_bushing_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_garra_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.11156457583639312 0.18341166271941528 -0.23554328817890585"/>
+    <mass value="0.034106117828258016"/>
+    <inertia ixx="9e-06" ixy="-1e-06" ixz="-1e-06" iyy="6e-06" iyz="0.0" izz="6e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.216455 -0.119409 -0.342539"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/servo_garra_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.216455 -0.119409 -0.342539"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/servo_garra_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Bearing_center_bushing_v1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.12051482408796677 0.24109109438285886 -0.2482261582024632"/>
+    <mass value="0.0034513242368025996"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.243996 -0.089216 -0.388257"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Bearing_center_bushing_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.243996 -0.089216 -0.388257"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Bearing_center_bushing_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Servo_gear_v1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.0009262313584528503 -0.0007236297858160823 0.004154502858716297"/>
+    <mass value="0.010154744217590462"/>
+    <inertia ixx="1e-06" ixy="-0.0" ixz="0.0" iyy="1e-06" iyz="-0.0" izz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.1069 -0.289253 -0.130401"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Servo_gear_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.1069 -0.289253 -0.130401"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Servo_gear_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Gripper_120T_v1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.01638328525552342 0.008799602836884968 0.011448777802317983"/>
+    <mass value="0.031315152970389164"/>
+    <inertia ixx="4e-05" ixy="3e-06" ixz="2e-06" iyy="1.2e-05" iyz="-1e-05" izz="4.5e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.121605 -0.331774 -0.131611"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Gripper_120T_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.121605 -0.331774 -0.131611"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Gripper_120T_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Gripper_72T_v1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.02586266985064753 0.005256939145523387 -0.006116461472526757"/>
+    <mass value="0.0250024753894087"/>
+    <inertia ixx="1.2e-05" ixy="-8e-06" ixz="2e-06" iyy="1.2e-05" iyz="1e-06" izz="2.1e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.124285 -0.329678 -0.143639"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Gripper_72T_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.124285 -0.329678 -0.143639"/>
+    <geometry>
+      <mesh filename="package://braco_pra_montar_modificado_v_description/meshes/Gripper_72T_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid28" type="fixed">
+  <origin rpy="0 0 0" xyz="0.088924 -0.085136 0.014529"/>
+  <parent link="Base_servo_mount_left_1"/>
+  <child link="servo_left_1"/>
+</joint>
+
+<joint name="Rev31" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.081375 0.065498 0.028641"/>
+  <parent link="servo_left_1"/>
+  <child link="Lower_arm_left_1"/>
+  <axis xyz="0.939693 -0.34202 -0.0"/>
+</joint>
+
+<joint name="Rigid37" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.147199 -0.074969 -0.01263"/>
+  <parent link="Base_servo_mount_right_v1_1"/>
+  <child link="servo_right_1"/>
+</joint>
+
+<joint name="Rev39" type="continuous">
+  <origin rpy="0 0 0" xyz="0.128791 0.064773 0.0558"/>
+  <parent link="servo_right_1"/>
+  <child link="Lower_arm_right_1"/>
+  <axis xyz="-0.939693 0.34202 0.0"/>
+</joint>
+
+<joint name="Rigid43" type="fixed">
+  <origin rpy="0 0 0" xyz="0.015719 0.04319 0.045962"/>
+  <parent link="Lower_arm_left_1"/>
+  <child link="Lower_arm_bushing_v1_down_1"/>
+</joint>
+
+<joint name="Rigid46" type="fixed">
+  <origin rpy="0 0 0" xyz="0.029022 0.079736 0.084853"/>
+  <parent link="Lower_arm_right_1"/>
+  <child link="Lower_arm_bushing_v1_up_1"/>
+</joint>
+
+<joint name="Rigid51" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.018567 -0.266906 -0.080911"/>
+  <parent link="Lower_arm_right_1"/>
+  <child link="servo_elbow_1"/>
+</joint>
+
+<joint name="Rev52" type="continuous">
+  <origin rpy="0 0 0" xyz="0.052721 0.393811 0.211848"/>
+  <parent link="servo_elbow_1"/>
+  <child link="Center_arm_v1_1"/>
+  <axis xyz="-0.939693 0.34202 0.0"/>
+</joint>
+
+<joint name="Rigid54" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.014829 0.017733 -0.003106"/>
+  <parent link="Center_arm_v1_1"/>
+  <child link="centralizador_square_elbow_1"/>
+</joint>
+
+<joint name="Rigid56" type="fixed">
+  <origin rpy="0 0 0" xyz="0.002362 0.064966 -0.090167"/>
+  <parent link="Center_arm_v1_1"/>
+  <child link="centralizador_square_punho_1"/>
+</joint>
+
+<joint name="Rigid57" type="fixed">
+  <origin rpy="0 0 0" xyz="0.044741 0.122925 0.130815"/>
+  <parent link="Lower_arm_left_1"/>
+  <child link="suporte_elbow_1"/>
+</joint>
+
+<joint name="Rigid58" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.016557 -0.006309 0.003106"/>
+  <parent link="centralizador_square_elbow_1"/>
+  <child link="centralizador_elbow_1"/>
+</joint>
+
+<joint name="Rigid60" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.013654 0.001665 -0.011591"/>
+  <parent link="centralizador_square_punho_1"/>
+  <child link="centralizador_punho_1"/>
+</joint>
+
+<joint name="Rigid61" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.0294 -0.066158 -0.006319"/>
+  <parent link="Upper_arm_left_v1_1"/>
+  <child link="suporte_punho_1"/>
+</joint>
+
+<joint name="Rev63" type="continuous">
+  <origin rpy="0 0 0" xyz="0.020094 0.055207 -0.101758"/>
+  <parent link="Center_arm_v1_1"/>
+  <child link="servo_punho_1"/>
+  <axis xyz="0.939693 -0.34202 -0.0"/>
+</joint>
+
+<joint name="Rigid64" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.129538 0.032135 -0.158598"/>
+  <parent link="Upper_arm_right_v1_1"/>
+  <child link="Upper_arm_servo_mount_v1_1"/>
+</joint>
+
+<joint name="Rigid65" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.034581 0.012586 0.0"/>
+  <parent link="Upper_arm_servo_mount_v1_1"/>
+  <child link="Upper_arm_left_v1_1"/>
+</joint>
+
+<joint name="Rigid66" type="fixed">
+  <origin rpy="0 0 0" xyz="0.160285 0.033893 0.164948"/>
+  <parent link="servo_punho_1"/>
+  <child link="Upper_arm_right_v1_1"/>
+</joint>
+
+<joint name="Rigid68" type="fixed">
+  <origin rpy="0 0 0" xyz="0.006714 -0.194938 0.227222"/>
+  <parent link="Upper_arm_servo_mount_v1_1"/>
+  <child link="servo_punho_rotation_1"/>
+</joint>
+
+<joint name="Rev69" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.017347 -0.030483 0.01631"/>
+  <parent link="MG995_v1_1"/>
+  <child link="tampa_1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+</joint>
+
+<joint name="Rigid73" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.028677 0.031333 0.004"/>
+  <parent link="tampa_1"/>
+  <child link="Base_servo_mount_left_1"/>
+</joint>
+
+<joint name="Rigid74" type="fixed">
+  <origin rpy="0 0 0" xyz="0.041257 0.005884 0.004"/>
+  <parent link="tampa_1"/>
+  <child link="Base_servo_mount_right_v1_1"/>
+</joint>
+
+<joint name="Rigid75" type="fixed">
+  <origin rpy="0 0 0" xyz="0.020089 0.027741 0.03362"/>
+  <parent link="base_link"/>
+  <child link="MG995_v1_1"/>
+</joint>
+
+<joint name="Rigid76" type="fixed">
+  <origin rpy="0 0 0" xyz="0.009076 0.001255 -0.014534"/>
+  <parent link="Cover_plate_v1_1"/>
+  <child link="Servo_mount_v1_1"/>
+</joint>
+
+<joint name="Rev77" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.019288 0.214184 -0.226335"/>
+  <parent link="servo_punho_rotation_1"/>
+  <child link="Cover_plate_v1_1"/>
+  <axis xyz="0.340719 0.936117 0.087156"/>
+</joint>
+
+<joint name="Rigid78" type="fixed">
+  <origin rpy="0 0 0" xyz="0.012694 0.071612 0.00445"/>
+  <parent link="Servo_mount_v1_1"/>
+  <child link="Bearing_guide_v1_1"/>
+</joint>
+
+<joint name="Rigid79" type="fixed">
+  <origin rpy="0 0 0" xyz="0.013767 0.070774 0.009261"/>
+  <parent link="Servo_mount_v1_1"/>
+  <child link="Bearing_top-bottom_bushing_v1_1"/>
+</joint>
+
+<joint name="Rigid80" type="fixed">
+  <origin rpy="0 0 0" xyz="0.028096 0.067922 0.018302"/>
+  <parent link="Cover_plate_v1_1"/>
+  <child link="Bearing_top-bottom_bushing_v1__1__1"/>
+</joint>
+
+<joint name="Rigid81" type="fixed">
+  <origin rpy="0 0 0" xyz="0.109367 -0.142178 0.223557"/>
+  <parent link="Servo_mount_v1_1"/>
+  <child link="servo_garra_1"/>
+</joint>
+
+<joint name="Rigid82" type="fixed">
+  <origin rpy="0 0 0" xyz="0.136908 -0.172371 0.269275"/>
+  <parent link="Servo_mount_v1_1"/>
+  <child link="Bearing_center_bushing_v1_1"/>
+</joint>
+
+<joint name="Rev83" type="continuous">
+  <origin rpy="0 0 0" xyz="-0.109555 0.169844 -0.212138"/>
+  <parent link="servo_garra_1"/>
+  <child link="Servo_gear_v1_1"/>
+  <axis xyz="0.214417 -0.16763 0.96225"/>
+</joint>
+
+<joint name="Rev84" type="revolute">
+  <origin rpy="0 0 0" xyz="0.00075 -0.000587 0.003368"/>
+  <parent link="Bearing_top-bottom_bushing_v1_1"/>
+  <child link="Gripper_120T_v1_1"/>
+  <axis xyz="0.214417 -0.16763 0.96225"/>
+  <limit effort="100" lower="0.0" upper="0.785398" velocity="100"/>
+</joint>
+
+<joint name="Rev85" type="revolute">
+  <origin rpy="0 0 0" xyz="-0.119711 0.240462 -0.244618"/>
+  <parent link="Bearing_center_bushing_v1_1"/>
+  <child link="Gripper_72T_v1_1"/>
+  <axis xyz="0.214417 -0.16763 0.96225"/>
+  <limit effort="100" lower="-0.785398" upper="0.0" velocity="100"/>
+</joint>
+
+</robot>
