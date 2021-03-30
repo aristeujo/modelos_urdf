@@ -1,0 +1,43 @@
+braco_pra_montar_modificado_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  Rev31_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev31
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev39_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev39
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev52_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev52
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev63_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev63
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev69_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev69
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev77_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev77
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev83_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev83
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev84_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev84
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev85_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev85
+    pid: {p: 100.0, i: 0.01, d: 10.0}

@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam file="$(find braco_pra_montar_modificado_description)/launch/controller.yaml" command="load"/>
+<node args="Rev31_position_controller Rev39_position_controller Rev52_position_controller Rev63_position_controller Rev69_position_controller Rev77_position_controller Rev83_position_controller Rev84_position_controller Rev85_position_controller joint_state_controller " name="controller_spawner" ns="braco_pra_montar_modificado" output="screen" pkg="controller_manager" respawn="false" type="spawner"/>
+<node name="robot_state_publisher" output="screen" pkg="robot_state_publisher" respawn="false" type="robot_state_publisher">
+  <remap from="/joint_states" to="/braco_pra_montar_modificado/joint_states"/>
+</node>
+
+</launch>
