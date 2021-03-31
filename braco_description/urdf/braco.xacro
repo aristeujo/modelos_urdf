@@ -172,27 +172,6 @@
   </collision>
 </link>
 
-<link name="Bearing_holder_v1_elbow_1">
-  <inertial>
-    <origin rpy="0 0 0" xyz="3.194508534920537e-07 -0.004478970044736082 3.475102374472794e-07"/>
-    <mass value="0.004555197598329582"/>
-    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="1e-06" iyz="0.0" izz="1e-06"/>
-  </inertial>
-  <visual>
-    <origin rpy="0 0 0" xyz="-0.168619 -0.023799 -0.190897"/>
-    <geometry>
-      <mesh filename="package://braco_description/meshes/Bearing_holder_v1_elbow_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin rpy="0 0 0" xyz="-0.168619 -0.023799 -0.190897"/>
-    <geometry>
-      <mesh filename="package://braco_description/meshes/Bearing_holder_v1_elbow_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
 <link name="servo_elbow_1">
   <inertial>
     <origin rpy="0 0 0" xyz="0.11594994326799526 0.2079486078632405 -0.05134182605242854"/>
@@ -294,27 +273,6 @@
     <origin rpy="0 0 0" xyz="-0.168543 -0.021709 -0.073405"/>
     <geometry>
       <mesh filename="package://braco_description/meshes/Center_arm_bearing_guide_clamp_v1_punho_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link>
-
-<link name="Bearing_holder_v1_punho_1">
-  <inertial>
-    <origin rpy="0 0 0" xyz="-3.6128669958501725e-07 -0.003920514991448638 -4.922626540976305e-07"/>
-    <mass value="0.004555197598329582"/>
-    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="1e-06" iyz="0.0" izz="1e-06"/>
-  </inertial>
-  <visual>
-    <origin rpy="0 0 0" xyz="-0.168883 -0.023799 -0.073408"/>
-    <geometry>
-      <mesh filename="package://braco_description/meshes/Bearing_holder_v1_punho_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin rpy="0 0 0" xyz="-0.168883 -0.023799 -0.073408"/>
-    <geometry>
-      <mesh filename="package://braco_description/meshes/Bearing_holder_v1_punho_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -636,12 +594,6 @@
   <axis xyz="0.0 1.0 0.0"/>
 </joint>
 
-<joint name="Rigid64" type="fixed">
-  <origin rpy="0 0 0" xyz="0.167176 0.0468 0.079227"/>
-  <parent link="ombro_1"/>
-  <child link="Bearing_holder_v1_elbow_1"/>
-</joint>
-
 <joint name="Rigid65" type="fixed">
   <origin rpy="0 0 0" xyz="0.042109 -0.221865 0.126361"/>
   <parent link="ombro_1"/>
@@ -671,12 +623,6 @@
   <origin rpy="0 0 0" xyz="-0.008486 0.0134 -0.008486"/>
   <parent link="Center_arm_bearing_guide_v1__1__1"/>
   <child link="Center_arm_bearing_guide_clamp_v1_punho_1"/>
-</joint>
-
-<joint name="Rigid75" type="fixed">
-  <origin rpy="0 0 0" xyz="-0.164801 0.122827 0.028003"/>
-  <parent link="punho_1"/>
-  <child link="Bearing_holder_v1_punho_1"/>
 </joint>
 
 <joint name="Rev76" type="continuous">
