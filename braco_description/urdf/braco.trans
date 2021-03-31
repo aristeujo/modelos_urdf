@@ -34,17 +34,6 @@
   </actuator>
 </transmission>
 
-<transmission name="Rev76_tran">
-  <type>transmission_interface/SimpleTransmission</type>
-  <joint name="Rev76">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-  </joint>
-  <actuator name="Rev76_actr">
-    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
-    <mechanicalReduction>1</mechanicalReduction>
-  </actuator>
-</transmission>
-
 <transmission name="Rev81_tran">
   <type>transmission_interface/SimpleTransmission</type>
   <joint name="Rev81">
@@ -84,6 +73,17 @@
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
   </joint>
   <actuator name="Rev89_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Rev92_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Rev92">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Rev92_actr">
     <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     <mechanicalReduction>1</mechanicalReduction>
   </actuator>
