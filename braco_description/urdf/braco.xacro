@@ -403,6 +403,195 @@
   </collision>
 </link>
 
+<link name="corpo_garra_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.036900222351620715 3.972525986601586e-09 -0.004369638500211437"/>
+    <mass value="0.0475742677792808"/>
+    <inertia ixx="2e-05" ixy="-0.0" ixz="2e-06" iyy="5.2e-05" iyz="0.0" izz="4.3e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.255193 -0.000397 -0.073089"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/corpo_garra_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.255193 -0.000397 -0.073089"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/corpo_garra_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Bearing_guide_v1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-3.61286664807281e-07 3.972064047520849e-09 0.017250496155362616"/>
+    <mass value="0.0016815613439380714"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.329943 -0.000397 -0.055839"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/Bearing_guide_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.329943 -0.000397 -0.055839"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/Bearing_guide_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Bearing_top-bottom_bushing_v1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-3.6128666519585906e-07 3.9724632054411076e-09 -0.0017495038446375955"/>
+    <mass value="0.0016106179771745465"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.329943 -0.000397 -0.085339"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/Bearing_top-bottom_bushing_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.329943 -0.000397 -0.085339"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/Bearing_top-bottom_bushing_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Bearing_top-bottom_bushing_v1__1__1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-3.61286664807281e-07 3.972463116428109e-09 0.0017504961553624424"/>
+    <mass value="0.0016106179771745465"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.329943 -0.000397 -0.060839"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/Bearing_top-bottom_bushing_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.329943 -0.000397 -0.060839"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/Bearing_top-bottom_bushing_v1__1__1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Bearing_center_bushing_v1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.07922163871333515 0.0377140039724632 0.11753649615536245"/>
+    <mass value="0.0034513242368025996"/>
+    <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.250721 0.037317 0.044447"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/Bearing_center_bushing_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.250721 0.037317 0.044447"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/Bearing_center_bushing_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="servo_garra_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.03427771088631398 -0.022783770578143334 0.08636982017301587"/>
+    <mass value="0.25257832542625036"/>
+    <inertia ixx="4.1e-05" ixy="-0.0" ixz="1e-06" iyy="6.8e-05" iyz="0.0" izz="4.4e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.260721 -0.023183 0.044447"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/servo_garra_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.260721 -0.023183 0.044447"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/servo_garra_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Gripper_120T_v1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.010502021200330336 0.01817352441983634 0.006028973064765603"/>
+    <mass value="0.031315152970389164"/>
+    <inertia ixx="1e-05" ixy="-4e-06" ixz="-3e-06" iyy="4e-05" iyz="-0.0" izz="4.8e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.329943 -0.000397 -0.064339"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/Gripper_120T_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.329943 -0.000397 -0.064339"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/Gripper_120T_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Gripper_72T_v1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="0.020483598648375345 -0.017686860327201046 -0.0012211351915924207"/>
+    <mass value="0.0250024753894087"/>
+    <inertia ixx="4e-06" ixy="2e-06" ixz="2e-06" iyy="2e-05" iyz="-0.0" izz="2.2e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.329943 -0.000397 -0.076839"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/Gripper_72T_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.329943 -0.000397 -0.076839"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/Gripper_72T_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Servo_gear_v1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-3.2988473630535253e-07 2.5748186260231764e-07 0.004318374627694313"/>
+    <mass value="0.010154744217590462"/>
+    <inertia ixx="1e-06" ixy="-0.0" ixz="0.0" iyy="1e-06" iyz="0.0" izz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="-0.285023 -0.000399 -0.067149"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/Servo_gear_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="-0.285023 -0.000399 -0.067149"/>
+    <geometry>
+      <mesh filename="package://braco_description/meshes/Servo_gear_v1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
 <joint name="Rigid28" type="fixed">
   <origin rpy="0 0 0" xyz="-0.014425 -0.12725 0.040109"/>
   <parent link="Base_servo_mount_left_1"/>
@@ -513,6 +702,66 @@
   <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
   <parent link="base_link"/>
   <child link="NEMA17_-_Motor_de_passo_v1_1"/>
+</joint>
+
+<joint name="Rev81" type="continuous">
+  <origin rpy="0 0 0" xyz="0.146519 -0.109865 -0.226631"/>
+  <parent link="servo_punho_rot_1"/>
+  <child link="corpo_garra_1"/>
+  <axis xyz="1.0 0.0 0.0"/>
+</joint>
+
+<joint name="Rigid82" type="fixed">
+  <origin rpy="0 0 0" xyz="0.07475 0.0 -0.01725"/>
+  <parent link="corpo_garra_1"/>
+  <child link="Bearing_guide_v1_1"/>
+</joint>
+
+<joint name="Rigid83" type="fixed">
+  <origin rpy="0 0 0" xyz="0.07475 0.0 0.01225"/>
+  <parent link="corpo_garra_1"/>
+  <child link="Bearing_top-bottom_bushing_v1_1"/>
+</joint>
+
+<joint name="Rigid84" type="fixed">
+  <origin rpy="0 0 0" xyz="0.07475 0.0 -0.01225"/>
+  <parent link="corpo_garra_1"/>
+  <child link="Bearing_top-bottom_bushing_v1__1__1"/>
+</joint>
+
+<joint name="Rigid85" type="fixed">
+  <origin rpy="0 0 0" xyz="-0.004472 -0.037714 -0.117536"/>
+  <parent link="corpo_garra_1"/>
+  <child link="Bearing_center_bushing_v1_1"/>
+</joint>
+
+<joint name="Rigid86" type="fixed">
+  <origin rpy="0 0 0" xyz="0.005528 0.022786 -0.117536"/>
+  <parent link="corpo_garra_1"/>
+  <child link="servo_garra_1"/>
+</joint>
+
+<joint name="Rev87" type="revolute">
+  <origin rpy="0 0 0" xyz="0.0 0.0 0.0035"/>
+  <parent link="Bearing_top-bottom_bushing_v1__1__1"/>
+  <child link="Gripper_120T_v1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <limit effort="100" lower="0.0" upper="0.785398" velocity="100"/>
+</joint>
+
+<joint name="Rev88" type="revolute">
+  <origin rpy="0 0 0" xyz="0.079222 0.037714 0.121286"/>
+  <parent link="Bearing_center_bushing_v1_1"/>
+  <child link="Gripper_72T_v1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <limit effort="100" lower="-0.785398" upper="0.0" velocity="100"/>
+</joint>
+
+<joint name="Rev89" type="continuous">
+  <origin rpy="0 0 0" xyz="0.024302 -0.022784 0.111596"/>
+  <parent link="servo_garra_1"/>
+  <child link="Servo_gear_v1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
 </joint>
 
 </robot>
