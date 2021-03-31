@@ -14,13 +14,6 @@
   <gravity>true</gravity>
 </gazebo>
 
-<gazebo reference="servo_left_1">
-  <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <selfCollide>true</selfCollide>
-</gazebo>
-
 <gazebo reference="servo_right_1">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
@@ -92,13 +85,6 @@
 </gazebo>
 
 <gazebo reference="Center_arm_bearing_guide_clamp_v1_punho_1">
-  <material>${body_color}</material>
-  <mu1>0.2</mu1>
-  <mu2>0.2</mu2>
-  <selfCollide>true</selfCollide>
-</gazebo>
-
-<gazebo reference="Base_servo_mount_left_1">
   <material>${body_color}</material>
   <mu1>0.2</mu1>
   <mu2>0.2</mu2>
