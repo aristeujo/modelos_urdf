@@ -9,10 +9,6 @@ braco_v2_controller:
     type: effort_controllers/JointPositionController
     joint: Rev52
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  Rev63_position_controller:
-    type: effort_controllers/JointPositionController
-    joint: Rev63
-    pid: {p: 100.0, i: 0.01, d: 10.0}
   Rev71_position_controller:
     type: effort_controllers/JointPositionController
     joint: Rev71
@@ -33,7 +29,11 @@ braco_v2_controller:
     type: effort_controllers/JointPositionController
     joint: Rev89
     pid: {p: 100.0, i: 0.01, d: 10.0}
-  Rev93_position_controller:
+  Rev95_position_controller:
     type: effort_controllers/JointPositionController
-    joint: Rev93
+    joint: Rev95
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  Rev96_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: Rev96
     pid: {p: 100.0, i: 0.01, d: 10.0}
